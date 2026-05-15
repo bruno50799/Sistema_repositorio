@@ -1,0 +1,45 @@
+function questionario(){
+    alert('Vamos conhecer a base do Javascript!')
+    var decisao = confirm('Está pronto para aprender?')
+    const pais = 'Brasil'
+    var teste = null
+    let teste2
+
+    if(decisao){
+        let nome = prompt('Qual o seu nome?:').toUpperCase()
+
+        let idade = Number.parseInt(
+            prompt('Qual sua idade?')
+        )
+
+        let curso = prompt('Qual seu curso?:')
+        let salario = prompt('Digite seu salario:')
+        let nota = Number(prompt('Digite a maior nota que tirou no curso até agora'))
+
+        document.writeln('<h2>Seja bem vindo, '+ nome + '!</h2>')
+
+        document.write('<ul>')
+            document.writeln('<li>Você tem' + idade +'anos!</li>')
+            document.writeln(`<li>Curso escolhido: ${curso.toLowerCase()}</li>`)
+            document.writeln('<li>Você tem'* nome.length + 'caracteres no seu nome!</li>')
+            document.writeln('<li> Seus país é' + pais +'</li>')
+            document.writeln('<li>Seu salário é de: ' +Number.parseFloat(salario).toFixed(2)+'</li>')
+        document.write('</ul>')
+
+        console.log(typeof nome)
+        console.log(typeof decisao)
+        console.log(typeof idade)
+        console.log(typeof curso)
+        console.log(typeof teste)
+        console.log(typeof teste2)
+
+    }else{
+        alert('Que pena querido aluno, quem sabe na próxima!')
+        document.writeln('<h1>sistema encerrado.. recarregue a página.. </h2>')
+        alert(decisao)
+        alert(nome)
+    }
+
+}
+
+    
